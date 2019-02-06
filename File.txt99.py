@@ -20,16 +20,36 @@ try:
 except ValueError:
     print( "Your age must be numeric.")
 
+try:
+    x=input("enter the integer:")
+    add=x+t
+except NameError:
+    print("t is not declared")
+except:
+    print("t is declared")
+
+
+try:
+    a=input("enter the value")
+    if a<3:
+        print("enter the value again")
+    else:
+        print("value",a)
+
+except SyntaxError:
+    print("SyntexError in line 34 & line 36")
+except:
+    print("the value of a is defined")
+
+
 
 #wap to correct the text:
-from textblob import TextBlob
-text=TextBlob('he is gret persan')
-print(text.correct())
-
 str="Hello-this-is-my-file"
 print(str.replace('-',' '))
 
 
-
-
+#extra questions
+from textblob import TextBlob
+text=TextBlob('he is gret persan')
+print(text.correct())
 
